@@ -1,3 +1,4 @@
+require 'pry'
 class EmailAddressParser
   attr_accessor :emails
 
@@ -6,6 +7,6 @@ class EmailAddressParser
   end
   
   def parse
-    emails.split(/, | /).uniq
+    self.emails.split(/, | /).uniq
   end
 end
